@@ -426,6 +426,8 @@ main{
 }
 .event-item{
     display: flex;
+    width: 100%;
+    max-width: 833px;
 }
 .event-time{
     display: flex;
@@ -456,7 +458,7 @@ main{
 }
 .month{
     position: absolute;
-    top: 65%; /* Adjust to position the day */
+    top: 65%; 
     left: 50%;
     transform: translateX(-50%);
     font-size: 1.4rem;
@@ -478,6 +480,7 @@ main{
 .details-button{
     padding: 0.5em 1em;
     border: 2px solid black;
+    background-color: transparent;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
