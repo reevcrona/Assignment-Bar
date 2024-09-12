@@ -85,8 +85,6 @@ li > a{
     z-index: -1;
 }
 
-
-
 .underline-effect::before{
     transition: 0.3s all ease-in-out;
     position: absolute;
@@ -219,12 +217,7 @@ main{
     font-weight: bold;  
     font-size: 1.1em;  
 }
-.pearl-highlight{
-    color: black;
-    font-weight: bold;  
-    font-size: 1.1em; 
-    text-decoration: underline 2px #511ab7;
-}
+
 .cocktail-button > a{
     font-family: "Lato", sans-serif;
     color: black;
