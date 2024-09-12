@@ -60,7 +60,6 @@ li > a{
     
 }
 .contact-us > a{
-    
     color: white;
     padding: 8px 18px;
     border-radius: 10px;
@@ -79,7 +78,6 @@ li > a{
     z-index: -1;
     border-radius: 8px;
     
-    
 }
 .contact-us > a:hover::before{
     transition: 0.4s all ease-out;
@@ -87,9 +85,7 @@ li > a{
     z-index: -1;
 }
 
-.contact-us > a:hover{
-    color: white;
-}
+
 
 .underline-effect::before{
     transition: 0.3s all ease-in-out;
@@ -174,6 +170,7 @@ main{
     font-family: "Lato", sans-serif;
     align-items: center;
     
+    
 }
 .cocktail-header{
     font-size: 5rem;
@@ -181,6 +178,8 @@ main{
     color: transparent;
     -webkit-text-stroke: 3px black;
     align-self: start;
+    letter-spacing: 1px;
+    font-weight: 900;
 }
 .cocktail-text{
     color: black;
@@ -188,17 +187,72 @@ main{
     letter-spacing: 0.5px;
     font-size: 1.1rem;
     font-weight: normal;
+    margin: 10px 0;
 }
 .cocktail-image-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 800px;
-    height: 600px;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    max-height: 600px;
     
 }
 .cocktail-img{
     object-fit: cover;
     width: 100%;
     height: 100%;
+    border-radius: 10px;
+}
+
+.highlight {
+    color: #511ab7;  
+    font-weight: bold;  
+    font-size: 1.1em;  
+}
+.cocktail-button > a{
+    font-family: "Lato", sans-serif;
+    color: black;
+    padding: 15px 18px;
+    border-radius: 10px;
+    border: 2px solid black;
+    text-decoration: none;
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    z-index: 1;
+    
+    
+}
+.cocktail-button{
+    border: none;
+    margin-top: 40px;
+    align-self: center;
+}
+
+
+
+.cocktail-button > a::before{
+    transition: 0.4s all ease-in-out;
+    position: absolute;
+    content: "";
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    width: 0;
+    background-color: #511ab7;
+    z-index: -1;
+    border-radius: 8px;
+    
+}
+.cocktail-button > a:hover::before{
+    transition: 0.4s all ease-out;
+    width: 100%;
+    z-index: -1;
+}
+.cocktail-button > a:hover{
+    color: white;
 }
