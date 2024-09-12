@@ -115,6 +115,7 @@ li > a{
    display: flex;
    justify-content: center;
 }
+
 .hero-img{
     border-radius: 300px 300px 0px 0px;
     width: 700px;
