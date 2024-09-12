@@ -146,7 +146,11 @@ li > a{
 
 
 main{
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    height: auto;
     background-color: #f2f3f4;
 }
 
@@ -154,7 +158,7 @@ main{
 
 .cocktail-section{
     display: flex;
-    height: 60vh;
+    height: 100vh;
 }
 
 .cocktail-main-container{
@@ -184,6 +188,7 @@ main{
     align-self: start;
     letter-spacing: 1px;
     font-weight: 900;
+    margin-bottom: 20px;
 }
 .cocktail-text{
     color: black;
@@ -214,6 +219,11 @@ main{
     color: #511ab7;  
     font-weight: bold;  
     font-size: 1.1em;  
+}
+.pearl-highlight{
+    color: black;
+    font-weight: bold;  
+    font-size: 1.1em; 
 }
 .cocktail-button > a{
     font-family: "Lato", sans-serif;
@@ -259,4 +269,108 @@ main{
 }
 /*Cocktail*/
 
+/*Food*/
 
+.food-section{
+    display: flex;
+    height: 100vh;
+}
+.food-main-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center; 
+    margin-top: 100px;
+
+}
+
+.food-text-container{
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    flex-direction: column;
+    font-family: "Lato", sans-serif;
+    align-items: center;
+}
+
+
+.food-image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    max-height: 600px;
+    
+}
+.food-img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.food-header{
+    font-size: 5rem;
+    margin: 0;
+    color: transparent;
+    -webkit-text-stroke: 3px black;
+    align-self: start;
+    letter-spacing: 1px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.food-text{
+    color: black;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    font-size: 1.1rem;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.food-button > a{
+    font-family: "Lato", sans-serif;
+    color: black;
+    padding: 15px 18px;
+    border-radius: 10px;
+    border: 2px solid black;
+    text-decoration: none;
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+.food-button{
+    border: none;
+    margin-top: 40px;
+    align-self: center;
+}
+.food-button > a::before{
+    transition: 0.4s all ease-in-out;
+    position: absolute;
+    content: "";
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    width: 0;
+    background-color: #511ab7;
+    z-index: -1;
+    border-radius: 8px;
+    
+}
+.food-button > a:hover::before{
+    transition: 0.4s all ease-out;
+    width: 100%;
+    z-index: -1;
+}
+.food-button > a:hover{
+    color: white;
+}
+
+
+/*Food*/
