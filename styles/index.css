@@ -144,10 +144,14 @@ li > a{
 
 /*Hero*/
 
+
 main{
     height: 100%;
     background-color: #f2f3f4;
 }
+
+ /*Cocktail*/
+
 .cocktail-section{
     display: flex;
     height: 60vh;
@@ -162,7 +166,7 @@ main{
     margin-top: 100px;
 
 }
-.cocktail-container{
+.cocktail-text-container{
     display: flex;
     width: 100%;
     max-width: 700px;
@@ -231,9 +235,6 @@ main{
     margin-top: 40px;
     align-self: center;
 }
-
-
-
 .cocktail-button > a::before{
     transition: 0.4s all ease-in-out;
     position: absolute;
@@ -256,3 +257,6 @@ main{
 .cocktail-button > a:hover{
     color: white;
 }
+/*Cocktail*/
+
+
