@@ -376,14 +376,14 @@ main{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:flex-end;
+    flex-direction: row;
 }
 .event-top-container{
     width: 100%;
+    height: 80%;
     max-width: 800px;
-    padding: 30px;
     font-family: "Lato",sans-serif;
 }
 
@@ -395,6 +395,7 @@ main{
     letter-spacing: 1px;
     font-weight: 900;
     margin-bottom: 20px;
+    
 }
 .event-top-text{
     color: white;
@@ -404,10 +405,12 @@ main{
     font-weight: normal;
     margin: 10px 0;
     max-width: 760px;
+    align-self: flex-start;
 }
 .event-bottom-container{
-    width: 50%;
+    width: 100%;
     height: 80%;
+    max-width: 800px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -415,6 +418,7 @@ main{
     flex-direction: column;
     font-family: "Lato",sans-serif;
     gap: 10px;
+    
    
 }
 .event-item{
