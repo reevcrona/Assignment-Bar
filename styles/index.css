@@ -492,5 +492,30 @@ main{
     background-color: #9B59B6;
 }
     
-
 /*Events*/
+
+/*Menu*/
+
+.menu-section{
+    height: 100vh;
+    background-color: #DFDBE5;
+    
+}
+.menu-main-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    
+}
+.menu-container{
+    display: flex;
+    width: 1000px;
+    height: 700px;
+    background-color: black;
+}
+
+
+/*Menu*/
