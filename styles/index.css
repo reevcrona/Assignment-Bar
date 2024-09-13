@@ -517,7 +517,8 @@ main{
     width: 700px;
     height: 800px;
     background-color: white;
-    border: 4px solid black;
+    border: 15px solid black;
+    color: black;
 }
 .menu-container::before{
     content: "";
@@ -557,4 +558,6 @@ main{
 .food-ingredients{
     margin:0;
 }
+
+
 /*Menu*/
