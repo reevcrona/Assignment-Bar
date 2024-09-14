@@ -604,9 +604,12 @@ main{
 }
 .openHours-bottom{
     height: 80%;
+    width: 100%;
+    max-width: 500px;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-family: "Lato",sans-serif;
 }
 .top-header{
     margin: 0;
@@ -618,11 +621,15 @@ main{
 }
 .open-hours-content{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .open-hours-content > h4{
     margin: 0;
+    font-size: 1.6rem;
 }
 .times > p{
     margin: 0;
+    font-size: 1.2rem;
 }
 /*Open hours*/
