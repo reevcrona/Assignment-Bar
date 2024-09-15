@@ -699,3 +699,25 @@ main{
     color: white;
 }
 /*Open hours*/
+
+/*Footer*/
+
+footer{
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    padding: 15px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid white;
+}
+.footer-container{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Footer*/
