@@ -377,7 +377,7 @@ main{
     height: 100%;
     display: flex;
     justify-content: space-evenly;
-    align-items:flex-end;
+    align-items:center;
     flex-direction: row;
 }
 .event-top-container{
@@ -486,7 +486,6 @@ main{
     width: 800px;
     height: 500px;
     color: white;
-    
 }
 
 .event{
@@ -508,13 +507,21 @@ main{
     display: flex;
     flex-direction: column;
     gap: 5px;
+    max-width: 514px;
+    min-width: 514px;
 }
 .extra-details > h5{
     font-size: 1.7rem;
     margin: 45px 0;
+    min-width: 240px;
 }
 .extra-details > ul > li{
     margin-left: 0;
+}
+.extra-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .span-bold{
     font-weight: bold;
