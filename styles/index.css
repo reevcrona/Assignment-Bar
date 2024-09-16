@@ -712,7 +712,7 @@ footer{
 }
 .footer-container{
     width: 100%;
-    max-width: 1000px;
+    max-width: 1300px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -727,11 +727,22 @@ footer{
 
 .copyright{
     margin: 0;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: white;
 }
 .footer-logo{
     width: 120px;
     height: 100px;
+}
+.fa-x-twitter:hover{
+    color: 	#000000;
+}
+.fa-facebook:hover{
+    color: #1877F2;
+}
+.fa-instagram:hover{
+    background: linear-gradient(to right,#833ab4,#fd1d1d,#fcb045);
+    background-clip: text;
+    color: transparent;
 }
 /*Footer*/
