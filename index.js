@@ -1,5 +1,4 @@
 const detailButtons = document.querySelectorAll(".details-button");
-const events = document.querySelectorAll(".event");
 const sunset = document.querySelector(".sunset-social-hour")
 const gourmet = document.querySelector(".gourmet-food")
 const violetVibes = document.querySelector(".violet-vibes")
