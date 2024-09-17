@@ -69,8 +69,6 @@ main{
     justify-content:space-evenly;
     align-items: flex-start; 
     margin-top: 100px;
-    
-
 }
 .cocktail-text-container{
     display: flex;
@@ -735,9 +733,63 @@ footer{
 /*Media*/
 
 @media(max-width:1280px){
+    
+    /*Hero*/
     .outline-text{
-        font-size: 4rem;
+        font-size: 5rem;
     }
+    .hero-img{
+        width: 500px;
+        height: 500px;
+        
+    }
+    /*Hero*/
+
+
+    /*Cocktail*/
+
+    .cocktail-image-container{
+        width: 100%;
+        max-width: 550px;
+        height: 100%;
+        max-height: 500px;
+       
+        
+    }
+
+    .cocktail-main-container{
+        margin-top: 50px;
+    }
+
+    .cocktail-text{
+        color: black;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+        font-size: 0.9rem;
+        font-weight: normal;
+        margin: 10px 0;
+    }
+
+    .cocktail-text-container{
+        width: 100%;
+        max-width: 600px;
+        
+    }
+    .cocktail-header{
+        margin-bottom: 5px;
+    }
+    .cocktail-button{
+        margin-top: 20px;
+    }
+
+    .cocktail-button > a{
+        padding: 10px 12px;
+        border-radius: 10px;
+        font-size: 1.2rem;
+
+    }
+    /*Cocktail*/
+
 }
 
 
