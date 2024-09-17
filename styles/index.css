@@ -5,104 +5,7 @@ body{
     background: linear-gradient(135deg, #511ab7, #7a3cd6, #a75cf1);
     height: auto;
 }
-/*Nav*/
-nav{
-    display: flex;
-    align-items:flex-start;
-    justify-content: center;
-    padding: 15px 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;   
-    background-color: rgba(0, 0, 0, 0.5);
-    border-bottom: 1px solid white;
 
-}
-.nav-menu{
-    display: flex;
-    margin: 0;
-}
-.nav-menu-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-.logo{
-    width: 130px;
-    height: 110px;
-}
-
-
-h3{
-    color: white;
-    font-size: 3rem;
-    margin: 0 1em 0 1em;
-    font-family: "Quicksand", serif;
-    letter-spacing: 4px;
-}
-
-
-li{
-    list-style: none;
-    margin-left: 2em;
-}
-li > a{
-    font-family: "Lato", sans-serif;
-    text-decoration: none;
-    position: relative;
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    z-index: 1;
-    padding-bottom: 2px;
-    
-}
-.contact-us > a{
-    color: white;
-    padding: 8px 18px;
-    border-radius: 10px;
-    border: 2px solid white;
-}
-.contact-us > a::before{
-    transition: 0.4s all ease-in-out;
-    position: absolute;
-    content: "";
-    top:0;
-    left:0;
-    right:0;
-    bottom: 0;
-    width: 0;
-    background: linear-gradient(135deg, #511ab7, #7a3cd6, #a75cf1);
-    z-index: -1;
-    border-radius: 8px;
-    
-}
-.contact-us > a:hover::before{
-    transition: 0.4s all ease-out;
-    width: 100%;
-    z-index: -1;
-}
-
-.underline-effect::before{
-    transition: 0.3s all ease-in-out;
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 50%; 
-    transform: translateX(-50%);
-    height: 5px;
-    width:0;
-    background-color:white;
-    
-}
-
-.underline-effect:hover::before {
-    width: 100%;
-}
-
-/*Nav*/
 
 
 /*Hero*/
@@ -449,6 +352,7 @@ main{
     max-width: 700px;
 }
 .date{
+    color: white;
     position: relative;
     font-size: 3.5rem;
     padding-bottom: 30px;
@@ -821,3 +725,23 @@ footer{
     color: transparent;
 }
 /*Footer*/
+
+
+
+
+
+
+
+/*Media*/
+
+@media(max-width:1280px){
+    .outline-text{
+        font-size: 4rem;
+    }
+}
+
+
+
+
+
+/*Media*/
