@@ -478,8 +478,6 @@ main{
 .menu-section{
     height: 100vh;
     background-color: #DFDBE5;
-    
-    
 }
 .menu-main-container{
     width: 100%;
@@ -561,7 +559,6 @@ main{
     max-width: 600px;
     height: 100%;
     max-height: 500px;
-    margin-left: 100px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -673,6 +670,7 @@ main{
 .questions-button{
     border: none;
     margin-top: 20px;
+    background-color: #fff;
 }
 .questions-button > a:hover{
     color: white;
@@ -892,8 +890,6 @@ footer{
         background-color: transparent;
         transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     }
-
-
     .date{
         font-size: 2.7rem;
         padding-bottom: 20px;
@@ -903,7 +899,61 @@ footer{
     }
     /*Events*/
 
+    /*Menu*/
+    .menu-section{
+        height: 200vh;
+        background-color: #fff;
+    }
+    .menu-container{
+        position: relative;
+        display: flex;
+        width: 700px;
+        height: 800px;
+        background-color: white;
+        border: 15px solid black;
+        color: black;
+    }
+    /*Menu*/
 
+    /*Open hours*/
+    
+    .openHours-main-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .openHours-container,.questions-container{
+        background-color: white;
+        width: 100%;
+        max-width: 450px;
+        height: 100%;
+        max-height: 400px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        border: 1px solid black;
+    }
+
+    .open-hours-content > p {
+        font-size: 0.8rem;
+    }
+
+    .open-hours-content > h4 {
+        margin-bottom: 5px;
+        font-size: 1.6rem;
+    }
+
+    .questions-bottom > p {
+       font-size: 0.9rem;
+        max-width: 400px;
+    }
+    /*Open hours*/
 }
 
 
