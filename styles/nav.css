@@ -108,8 +108,16 @@ li > a{
 
 @media(max-width:1280px){
 
+    .nav-menu-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+
     .purple-pearl-header{
-        font-size: 2rem;
+        font-size: 2.3rem;
         margin: 0.5em 0;
     }
 
