@@ -2,28 +2,24 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background: linear-gradient(135deg, #511ab7, #7a3cd6, #a75cf1);
     height: auto;
 }
 
-
+header{
+    background-image: url(/images/vecteezy_ai-generated-neon-bar-sign-neon-lights-space-for-text_39668814.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
 
 /*Hero*/
 
-.hero-section{
-   padding: 50px;
-   display: flex;
-   justify-content: center;
-   
-}
 
-.hero-img{
-    border-radius: 300px 300px 0px 0px;
-    width: 700px;
-    height: 700px;
-    display: none;
-}
+
+
 .hero-content{
+    width: 100%;
     display: flex;
 }
 .outline-text{
@@ -48,14 +44,7 @@ body{
 /*Hero*/
 
 
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    min-height: 100vh;
-    height: auto;
-    background-color: #fff;
-}
+
 
 
 
@@ -73,24 +62,16 @@ main{
     
     /*Hero*/
     .hero-content{
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
+       
     }
 
-    .hero-section{
-        height: 100vh;
-    }
-    
     .outline-text{
         font-size: 7rem;
-        max-width: 1000px;
-        margin-left: 30px;
+        max-width: 900px;
+       
     }
-    .hero-img{
-        width: 500px;
-        height: 500px;
-        
-    }
+    
     /*Hero*/
 
 
