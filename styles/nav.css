@@ -15,7 +15,7 @@
     margin: 0;
 }
 .nav-menu-container:hover{
-    background-color: rgba(81, 26, 183, 0.);
+    background-color: rgba(81, 26, 183, 1);
    
 }
 .logo{

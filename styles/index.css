@@ -7,7 +7,7 @@ body{
 }
 
 header{
-    background-image: url(/images/vecteezy_ai-generated-neon-bar-sign-neon-lights-space-for-text_39668814.jpeg);
+    background-image: url(/images/Hero-image.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -177,13 +177,12 @@ main{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items:center;
-    flex-direction: row;
+    flex-direction: column;
 }
 .event-top-container{
     width: 100%;
-    height: 80%;
     max-width: 800px;
     font-family: "Lato",sans-serif;
 }
@@ -208,166 +207,26 @@ main{
     max-width: 760px;
     align-self: flex-start;
 }
-.event-bottom-container{
+.event-card-container{
     width: 100%;
-    height: 80%;
-    max-width: 800px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    font-family: "Lato",sans-serif;
-    gap: 10px;
-    
-   
-}
-.event-item{
-    display: flex;
-    width: 100%;
-    max-width: 833px;
-}
-.event-time{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    width: 100%;
-    max-width: 200px;
-    height: 150px;
-    transition: background-color 0.3s ease-in-out;
-    flex:1;
 }
-.event-time > h3{
-    margin: 0;
-}
-.event-details{
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background-color: white;
+    width: 200px;
+    height: 300px;
+}
+.sunset-img{
     width: 100%;
-    height: 150px;
-    padding: 0 30px;
-    flex: 3;
-    max-width: 700px;
-}
-.date{
-    color: white;
-    position: relative;
-    font-size: 3.5rem;
-    padding-bottom: 30px;
-}
-.month{
-    position: absolute;
-    top: 65%; 
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 1.4rem;
-}
-
-.details-header{
-    font-size: 2rem;
-    margin:10px 0 5px 0;
-    color: black;
-    letter-spacing: 1px;
-    font-weight: 900;
+    height: 70%;
+    object-fit: cover;
     
 }
-.details-text{
-    margin: 0;
-    margin-bottom: 10px;
-    font-size: 0.8rem;
-}
-.details-button{
-    padding: 0.5em 1em;
-    border: 2px solid black;
-    background-color: transparent;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-.eventDetails-container{
-    position: relative;
-    width: 800px;
-    height: 500px;
-    color: white;
-}
-
-.event{
-  position: absolute; 
-  display:flex;
-  justify-content: space-between;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.event > h4{
-  align-self: center;
-  margin: 0;
-  margin-top: 10px;
-  font-size: 2.4rem;
-}
-
-.extra-details > ul{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    max-width: 514px;
-    min-width: 514px;
-}
-.extra-details > h5{
-    font-size: 1.7rem;
-    margin: 45px 0;
-    min-width: 240px;
-}
-.extra-details > ul > li{
-    margin-left: 0;
-}
-.extra-details{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.span-bold{
-    font-weight: bold;
-    font-size: 1.04rem;
-}
-.hidden{
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.5s ease-in-out;
-}
-.show{
-    opacity: 1;
-    pointer-events: all;
-    transition: opacity 0.5s ease-in-out;
-    transition-delay: 0.2s;
-}
-.sunset-cocktail-specials,.sunset-food-specials,.sunset-offers{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.details-event-time{
-    align-self: center;
-    font-size: 2rem;
-    margin: 0;
-}
-.event{
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-}
-.event ul{
-    margin:0;
-}
-.details-button:hover{
-    cursor: pointer;
-    background-color: #9B59B6;
-    color: white;
-    border: 2px solid #9B59B6;
-}
-.event-item:hover .event-time{
-    background-color: #9B59B6;
-}
-    
 /*Events*/
 
 
@@ -479,69 +338,21 @@ main{
 /*Food*/
    /*Events*/
    .events-section{
-    height: 120vh;
+    height: 100vh;
     
 }
-.events-main-container{
-    justify-content: space-evenly;
-}
+
 .event-top-header{
     font-size: 3rem;
     margin-bottom: 20px;
     
 }
 .event-top-container{
-    height: 80%;
     max-width: 600px;
     display: flex;
     flex-direction: column;
 }
-.event-bottom-container{
-    max-width: 550px;
-}
-.event-item{
-    max-width: 833px;
-}
 
-.event-time{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    width: 100%;
-    max-width: 150px;
-    height: 130px;
-    transition: background-color 0.3s ease-in-out;
-    flex:1;
-}
-.event-details{
-    background-color: white;
-    width: 100%;
-    height: 130px;
-    padding: 0 30px;
-    flex: 3;
-    max-width: 400px;
-}
-.details-header{
-    font-size: 1.5rem;
-    margin: 5px 0 5px 0;
-}
-.details-text{
-    margin-bottom: 5px;
-}
-.details-button{
-    padding: 0.25em 0.5em;
-    border: 2px solid black;
-    background-color: transparent;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-.date{
-    font-size: 2.7rem;
-    padding-bottom: 20px;
-}
-.month{
-    font-size: 1.4rem;
-}
 /*Events*/
 
 }
