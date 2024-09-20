@@ -2,6 +2,7 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    min-height: 100vh;
     height: auto;
 }
 
@@ -10,17 +11,16 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 100vh;
 }
 
 /*Hero*/
-
-
-
-
 .hero-content{
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .outline-text{
     font-family: "Lato", serif;
@@ -44,7 +44,229 @@ header{
 /*Hero*/
 
 
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    height: auto;
+    background-color: #fff;
+}
 
+ /*Cocktail*/
+
+.cocktail-section{
+    height: 80vh;
+}
+
+.cocktail-main-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: flex-start; 
+    margin-top: 100px;
+}
+.cocktail-text-container{
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    flex-direction: column;
+    font-family: "Lato", sans-serif;
+    align-items: center;
+}
+.cocktail-header{
+    font-size: 5rem;
+    margin: 0;
+    color: transparent;
+    -webkit-text-stroke: 3px black;
+    align-self: start;
+    letter-spacing: 1px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.cocktail-text{
+    color: black;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    font-size: 1.1rem;
+    font-weight: normal;
+    margin: 10px 0;
+}
+.cocktail-image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    max-height: 600px;
+    
+}
+.cocktail-img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.highlight {
+    color: #511ab7;  
+    font-weight: bold;  
+    font-size: 1.1em;  
+}
+
+.cocktail-button > a{
+    font-family: "Lato", sans-serif;
+    color: black;
+    padding: 15px 18px;
+    border-radius: 10px;
+    border: 2px solid black;
+    text-decoration: none;
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    z-index: 1;
+    
+    
+    
+}
+.cocktail-button{
+    border: none;
+    margin-top: 40px;
+    align-self: center;
+    background-color: #fff;
+}
+.cocktail-button > a::before{
+    transition: 0.4s all ease-in-out;
+    position: absolute;
+    content: "";
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    width: 0;
+    background-color: #511ab7;
+    z-index: -1;
+    border-radius: 8px;
+    
+}
+.cocktail-button > a:hover::before{
+    transition: 0.4s all ease-out;
+    width: 100%;
+    z-index: -1;
+}
+.cocktail-button > a:hover{
+    color: white;
+}
+/*Cocktail*/
+
+/*Food*/
+
+.food-section{
+    height: 80vh;
+}
+.food-main-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: flex-start; 
+    margin-top: 100px;
+}
+
+.food-text-container{
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    flex-direction: column;
+    font-family: "Lato", sans-serif;
+    align-items: center;
+}
+
+
+.food-image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    max-height: 600px;
+    
+}
+.food-img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.food-header{
+    font-size: 5rem;
+    margin: 0;
+    color: transparent;
+    -webkit-text-stroke: 3px black;
+    align-self: start;
+    letter-spacing: 1px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    
+}
+.food-text{
+    color: black;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    font-size: 1.1rem;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.food-button > a{
+    font-family: "Lato", sans-serif;
+    color: black;
+    padding: 15px 18px;
+    border-radius: 10px;
+    border: 2px solid black;
+    text-decoration: none;
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+.food-button{
+    border: none;
+    margin-top: 40px;
+    align-self: center;
+    background-color: #fff;
+}
+.food-button > a::before{
+    transition: 0.4s all ease-in-out;
+    position: absolute;
+    content: "";
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    width: 0;
+    background-color: #511ab7;
+    z-index: -1;
+    border-radius: 8px;
+    
+}
+.food-button > a:hover::before{
+    transition: 0.4s all ease-out;
+    width: 100%;
+    z-index: -1;
+}
+.food-button > a:hover{
+    color: white;
+}
+
+
+/*Food*/
 
 
 
@@ -61,20 +283,100 @@ header{
 @media(max-width:1280px){
     
     /*Hero*/
-    .hero-content{
-        justify-content: center;
-       
-    }
+    
 
     .outline-text{
-        font-size: 7rem;
-        max-width: 900px;
+        font-size: 8rem;
+        max-width: 1000px;
        
     }
     
     /*Hero*/
 
+/*Cocktail*/
 
+.cocktail-section{
+    height: 100vh;
+}
+
+.cocktail-header{
+    font-size: 4rem;
+    margin-bottom: 5px;
+}
+.cocktail-image-container{
+    max-width: 550px;
+    max-height: 450px;
+}
+
+.cocktail-main-container{
+    margin-top: 50px;
+}
+
+.cocktail-text{
+    color: black;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.cocktail-text-container{
+    max-width: 600px;
+    
+}
+.cocktail-button{
+    margin-top: 20px;
+}
+
+.cocktail-button > a{
+    padding: 10px 12px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+
+}
+/*Cocktail*/
+
+main{
+    min-height: 200vh;
+}
+/*Food*/
+
+.food-section{
+    height: 100vh;
+}
+.food-main-container{
+    margin-top: 0;
+}
+
+.food-text-container{
+    max-width: 600px;
+}
+.food-image-container{
+    max-width: 550px;
+    max-height: 450px;
+}
+.food-header{
+    font-size: 4rem;
+    margin-bottom: 5px;
+}
+.food-text{
+    color: black;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+    font-weight: normal;
+    margin: 10px 0;
+}
+.food-button{
+    margin-top: 20px;
+}
+.food-button > a{
+    padding: 10px 12px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+/*Food*/
    
 
 }

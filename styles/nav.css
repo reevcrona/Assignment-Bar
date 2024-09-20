@@ -7,7 +7,7 @@
     align-items: center;
     background-color: rgba(81, 26, 183, 0.3);
     backdrop-filter: blur(15px);
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .nav-menu{
@@ -15,7 +15,8 @@
     margin: 0;
 }
 .nav-menu-container:hover{
-    background-color: #511ab7;
+    background-color: rgba(81, 26, 183, 0.8);
+   
 }
 .logo{
     width: 130px;
