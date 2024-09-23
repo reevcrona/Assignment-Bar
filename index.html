@@ -5,34 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f3b5a4bf39.js" crossorigin="anonymous"></script>
     <title>The Purple Pearl</title>
 </head>
-<body></body>
-    <nav>
-        <div class="nav-menu-container">
-            <img class="logo" src="images/pearl-svgrepo-com.svg" alt="">
-            <h3>The Purple Pearl</h3>
-            
-            <ul class="nav-menu">
-                <li class="home"><a class="underline-effect" href="#">Home</a></li>
-                <li class="gallery"><a class="underline-effect" href="#">Gallery</a></li>
-                <li class="about-us"><a class="underline-effect" href="#">About us</a></li>
-                <li class="contact-us"><a href="#">Contact us</a></li>
-        </ul>
-        </div>
-        
-    </nav>
-    <section class="hero-section">
-        <div class="hero-content">
-            <h1 class="outline-text">Every Hour is <span class="happy">Happy</span> Hour at The Purple Pearl<span class="add-white">!</span> </h1>
-            <img src="images/StockCake-Cozy Bar Ambiance_1725650835.jpg" alt="">
-        </div>
-    </section>
-    <section class="content-section">
+<body>
+    <header>
+        <nav>
+            <div class="nav-menu-container">
+                <img class="logo" src="images/pearl-svgrepo-com.svg" alt="">
+                <h3 class="purple-pearl-header">The Purple Pearl</h3>
+                <ul class="nav-menu">
+                    <li class="home"><a class="underline-effect" href="#">Home</a></li>
+                    <li class="gallery"><a class="underline-effect" href="#">Gallery</a></li>
+                    <li class="about-us"><a class="underline-effect" href="#">About us</a></li>
+                    <li class="contact-us"><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h1 class="outline-text">Every Hour is <span class="happy">Happy</span> Hour at The Purple Pearl<span class="add-white">!</span> </h1>
+                </div>
+            </section>
+    </header>
 
+    <main>
+        <section class="cocktail-section">
+            <div class="cocktail-main-container">
+                <div class="cocktail-image-container">
+                    <img class="cocktail-img" src="images/cocktail-image.jpeg" alt="Purple cocktail">
+                </div>
+                <div class="cocktail-text-container">
+                    <h2 class="cocktail-header">Cocktails</h2>
+                    <p class="cocktail-text">At <span class="highlight">The Purple Pearl</span>, our cocktails are more than just drinks—they’re an escape to the tropics. Our talented mixologists have crafted a menu filled with vibrant, exotic flavors that will transport you to a sun-soaked island with every sip. From classic tiki cocktails like Mai Tais and Pina Coladas to our own signature creations, each drink is made with premium spirits, fresh juices, and a dash of paradise.</p>
+                    <p class="cocktail-text">Looking for something bold and unique? Try our <span class="highlight">Purple Pearl Punch</span>, a fruity blend with a hint of coconut and a surprising twist of passionfruit. Or if you’re in the mood for something refreshing and light, our <span class="highlight">Tropical Breeze</span> will hit the spot, combining fresh pineapple, lime, and a touch of rum to cool you down.</p>
+                    <p class="cocktail-text">Whether you’re here for a night out or just passing by, our cocktails promise to deliver that perfect island vibe in every glass.</p>
+                    <button class="cocktail-button"><a href="#menu-section">Cocktail Menu</a></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="food-section">
+            <div class="food-main-container">
+                <div class="food-text-container">
+                    <h2 class="food-header">Taste the Experience</h2>
+                    <p class="food-text">Elevate your senses at <span class="highlight">The Purple Pearl</span>, where each meal is a journey into the heart of fine cuisine. Our chef's creations combine the essence of the tropics with a touch of sophistication, offering an array of <span class="highlight">flavorful</span> and beautifully presented dishes.</p>
+                    <p class="food-text">From the freshest seafood to expertly crafted desserts, every bite is designed to <span class="highlight">delight</span> and leave a lasting impression. Join us for a dining experience that is as refined as it is <span class="highlight">unforgettable</span>.</p>
+                    <button class="food-button"><a href="#menu-section">Explore the Menu</a></button>
+                </div>
+                <div class="food-image-container">
+                    <img class="food-img" src="images/food-image.jpg" alt="Image of a plate of food">
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    
+    <section class="events-section">
+        <div class="events-main-container">
+            
+            <div class="event-top-container">
+                <h2 class="event-top-header">EVENTS AND SHOWS</h2>
+                <p class="event-top-text">At The Purple Pearl, we bring you unique and engaging experiences. Our carefully curated events range from live music and special themed nights to creating memorable moments. Each event is designed to offer a vibrant atmosphere and an enjoyable experience. Check our schedule and join us for an evening filled with excitement and joy!</p>
+            </div>
+
+            <div class="event-card-container">
+                
+                <div class="card sunset">
+                    
+                    <div class="card-content">
+                        <div class="card-date">
+                            <h4 class="month">OCT<span class="date">16</span></h4>
+                        </div>
+                        <div class="card-information">
+                            <h4>Sunset Social Hour</h4>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div> 
     </section>
+    
+    <script type="module" src="index.js"></script>
 </body>
 </html>
