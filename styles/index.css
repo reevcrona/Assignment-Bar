@@ -214,7 +214,7 @@ main{
     width: 100%;
     height: 100%;
     max-width: 1300px;
-    max-height: 650px;
+    max-height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,7 +230,7 @@ main{
     width: 100%;
     height: 100%;
     max-width: 600px;
-    max-height: 300px;
+    max-height: 280px;
     position: relative;
     overflow: hidden;
    
@@ -244,7 +244,7 @@ main{
     width: 100%;
     height: 100%;
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-image: url(/images/SunsetSocial.jpeg);
     transition: all 0.2s ease-in;
@@ -255,7 +255,7 @@ main{
     width: 100%;
     height: 100%;
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-image: url(/images/jazz.jpeg);
     transition: all 0.2s ease-in;
@@ -266,7 +266,7 @@ main{
     width: 100%;
     height: 100%;
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-image: url(/images/wineTasting.jpeg);
     transition: all 0.2s ease-in;
@@ -277,14 +277,14 @@ main{
     width: 100%;
     height: 100%;
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-image: url(/images/vecteezy_vibrant-purple-balloons-floating-against-a-soft-lavender_50125052.jpeg);
     transition: all 0.2s ease-in;
 }
 .violet:hover::before,.food:hover::before,.jazz:hover::before,.sunset:hover::before{
     filter: grayscale(30%) blur(2px);
-    
+    background-size: 110%;
 }
 .card-content{
     display: flex;
