@@ -222,22 +222,29 @@ main{
     height: 100%;
     max-width: 700px;
     max-height: 350px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     position: relative;
     z-index: 1;
     
    
 }
 .sunset{
-    background-image: url(/images/SunsetSocial.jpeg);
+    
 }
 .jazz{
     background-image: url(/images/jazz.jpeg);
 }
 .food{
     background-image: url(/images/wineTasting.jpeg);
+}
+.sunset::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/images/SunsetSocial.jpeg);
 }
 .card-content{
     display: flex;
@@ -246,16 +253,7 @@ main{
     padding-top: 30px;
     gap: 20px;
 }
-.sunset::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -3%;
-    height: 100%;
-    width: 3%;
-    background-color: red;
-    z-index: 2;
-}
+
 .card-date{
     display: flex;
     justify-content: center;
