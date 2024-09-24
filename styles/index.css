@@ -184,6 +184,10 @@ main{
 .event-top-container{
     width: 100%;
     max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: "Lato",sans-serif;
 }
 
@@ -194,18 +198,17 @@ main{
     align-self: start;
     letter-spacing: 1px;
     font-weight: 900;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     
 }
 .event-top-text{
     color: white;
     line-height: 1.6;
     letter-spacing: 0.5px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: normal;
     margin: 10px 0;
-    max-width: 760px;
-    align-self: flex-start;
+    max-width: 660px;
 }
 .event-card-container{
     width: 100%;
@@ -229,7 +232,7 @@ main{
     max-width: 600px;
     max-height: 300px;
     position: relative;
-    
+    overflow: hidden;
     
    
 }
@@ -313,6 +316,29 @@ main{
 .card-information > h4{
     font-size: 2rem;
     margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.card-information > p{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    max-width: 350px;
+    font-size: 1rem;
+}
+.event-time > h4{
+    font-size: 1.2rem;
+    margin: 0;
+    margin-left: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.event-time > i{
+    font-size: 1.2rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.event-time{
+    display: flex;
+    align-items: center;
+    
 }
 /*Events*/
 
