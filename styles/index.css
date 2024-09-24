@@ -233,7 +233,7 @@ main{
     max-height: 300px;
     position: relative;
     overflow: hidden;
-    
+   
    
 }
 
@@ -247,6 +247,7 @@ main{
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(/images/SunsetSocial.jpeg);
+    transition: all 0.2s ease-in;
 }
 .jazz::before{
     content: "";
@@ -257,6 +258,7 @@ main{
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(/images/jazz.jpeg);
+    transition: all 0.2s ease-in;
 }
 .food::before{
     content: "";
@@ -267,6 +269,7 @@ main{
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(/images/wineTasting.jpeg);
+    transition: all 0.2s ease-in;
 }
 .violet::before{
     content: "";
@@ -277,6 +280,11 @@ main{
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(/images/vecteezy_vibrant-purple-balloons-floating-against-a-soft-lavender_50125052.jpeg);
+    transition: all 0.2s ease-in;
+}
+.violet:hover::before,.food:hover::before,.jazz:hover::before,.sunset:hover::before{
+    filter: grayscale(30%) blur(2px);
+    
 }
 .card-content{
     display: flex;
@@ -316,10 +324,10 @@ main{
 .card-information > h4{
     font-size: 2rem;
     margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 .card-information > p{
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     width: 100%;
     max-width: 350px;
     font-size: 1rem;
@@ -339,6 +347,13 @@ main{
     display: flex;
     align-items: center;
     
+}
+.read-more{
+    text-decoration: underline;
+    color: white;
+}
+.read-more:hover{
+    cursor: pointer;
 }
 /*Events*/
 
