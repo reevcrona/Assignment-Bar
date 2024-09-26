@@ -357,6 +357,25 @@ main{
 }
 /*Events*/
 
+/*Menu*/
+.menu-section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-main-container{
+    display: grid;
+    width: 100%;
+    max-width: 1200px;
+    height: 70%;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,1fr);
+}
+
+
+/*Menu*/
+
 
 
 
