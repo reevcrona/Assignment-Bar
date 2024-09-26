@@ -4,6 +4,7 @@ body{
     box-sizing: border-box;
     min-height: 100vh;
     height: auto;
+    font-family: "Lato",sans-serif;
 }
 
 header{
@@ -362,32 +363,57 @@ main{
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:start;
 }
 .menu-main-container{
-    display: grid;
-    width: 100%;
-    max-width: 1200px;
-    height: 70%;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(10,1fr);
-}
-.burgers{
-    grid-area: 1/1/10/2;
-}
-.burger-price{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.burger-image{
-    width: 200px;
-    height: 200px;
-}
-.weekly-specials{
-    grid-area: 15/1/-1/3;
+   width: 100%;
+   max-width: 1200px;
+   display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows:auto 1fr;
+   background-color: darkblue;
 }
 
+.left-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    min-width: 350px;
+    padding: 20px;
+    grid-area: 1/1/-1/2;
+}
+
+.burgers > h3,.weekly-specials > h3{
+    font-size: 3.3rem;
+    margin: 0 0 0.3em 0;
+    text-align: center;
+}
+.burger-option,.weekly-option{
+    display: flex;
+    justify-content: space-between;
+}
+.burger-option > h4,.weekly-option > h4{
+    margin:  0 0 0.2em 0;
+    font-size: 2rem;
+}
+.burger-info,.weekly-info{
+    margin: 0 0 0.5em 0;
+}
+.burger-svg{
+    width: 150px;
+    height: 150px;
+}
+.header-row{
+    grid-area: 1/2/1/4;
+}
+.header-text{
+    font-size: 4rem;
+    margin: 0;
+}
+.middle-column{
+    grid-area: 2/2/3/3;
+}
 /*Menu*/
 
 
