@@ -365,15 +365,17 @@ main{
     justify-content: center;
     align-items:center;
     flex-direction: column;
-    background-color: #511ab7;
+    background-color: white;
 }
 .menu-main-container{
-   width: 100%;
-   max-width: 1400px;
-   display: grid;
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
+    max-height: 700px;
+    display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows:auto 1fr;
-   background-color: black;
+    background-color: black;
 }
 
 .left-column{
@@ -390,7 +392,8 @@ main{
     padding: 20px;
 }
 .burgers > h3,.weekly-specials > h3,.pizza > h3,.sides > h3,.sandwiches > h3,.desserts > h3{
-    font-size: 3.3rem;
+    font-size: 2.4rem;
+    letter-spacing: 2px;
     margin: 0 0 0.3em 0;
     text-align: center;
 }
@@ -402,21 +405,21 @@ main{
 ,.sandwiches-option > h4 ,.desserts-option > h4
 {
     margin:  0 0 0.2em 0;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 .burger-info,.weekly-info{
     margin: 0 0 0.5em 0;
 }
 .burger-svg{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     align-self: center;
 }
 .header-row{
     grid-area: 1/2/1/5;
 }
 .header-text{
-    font-size: 4rem;
+    font-size: 2.8rem;
     margin: 0;
 }
 .header-text > h2{
@@ -437,10 +440,8 @@ main{
     margin: 0;
 }
 .sandwiches,.desserts{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,1fr);
-    gap: 25px;
+    
+    
 }
 
 .s-header,.d-header{
@@ -455,16 +456,19 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 .sandwiches-option,.desserts-option{
     display: flex;
     justify-content: space-between;
 }
-.burger-header{
+.burger-header,.p-header,.w-header,.side-header,.s-header,.d-header{
     position: relative;
     z-index: 1;
 }
-.burger-header::before{
+.burger-header::before,.p-header::before,.w-header::before,.side-header::before,.s-header::before
+,.d-header::before
+{
     content: "";
     position: absolute;
     top: 50%;
@@ -479,10 +483,12 @@ main{
 }
 .burger-item > p,.weekly-item > p,.pizza-item > p,.sandwiches-item > p,.desserts-item > p{
     color: grey;
-    font-size: 0.8rem;
-    max-width: 300px;
+    font-size: 0.6rem;
+    max-width: 250px;
 }
-
+.s-header,.d-header{
+    width: 80%;
+}
 /*Menu*/
 
 
