@@ -383,17 +383,19 @@ main{
     padding: 20px;
     grid-area: 1/1/-1/2;
 }
-
-.burgers > h3,.weekly-specials > h3{
+.middle-column{
+    color: white;
+}
+.burgers > h3,.weekly-specials > h3,.pizza > h3,.sides > h3{
     font-size: 3.3rem;
     margin: 0 0 0.3em 0;
     text-align: center;
 }
-.burger-option,.weekly-option{
+.burger-option,.weekly-option,.pizza-option,.sides-option{
     display: flex;
     justify-content: space-between;
 }
-.burger-option > h4,.weekly-option > h4{
+.burger-option > h4,.weekly-option > h4, .pizza-option > h4,.sides-option > h4{
     margin:  0 0 0.2em 0;
     font-size: 2rem;
 }
@@ -403,16 +405,35 @@ main{
 .burger-svg{
     width: 150px;
     height: 150px;
+    align-self: center;
 }
 .header-row{
-    grid-area: 1/2/1/4;
+    grid-area: 1/2/1/5;
 }
 .header-text{
     font-size: 4rem;
     margin: 0;
 }
+.header-text > h2,.header-text > h3{
+    margin: 0;
+}
 .middle-column{
-    grid-area: 2/2/3/3;
+    grid-area: 2/2/3/4;
+}
+.sandwiches-option > h4,p{
+    margin: 0;
+}
+.desserts-option > h4,p{
+    margin: 0;
+}
+.sandwiches{
+    display: flex;
+}
+.desserts{
+    display: flex;
+}
+.right-column{
+    grid-area: 2/4/3/5;
 }
 /*Menu*/
 
