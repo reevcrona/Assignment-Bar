@@ -375,7 +375,8 @@ main{
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows:auto 1fr;
-    background-color: black;
+    background-color: #001F3F;
+    border: 10px solid black;
 }
 
 .left-column{
@@ -407,7 +408,7 @@ main{
     margin:  0 0 0.2em 0;
     font-size: 1.7rem;
 }
-.burger-info,.weekly-info{
+.burger-info,.weekly-info,.pizza-info,.sand-wiches-info,.desserts-info{
     margin: 0 0 0.5em 0;
 }
 .burger-svg{
@@ -484,7 +485,7 @@ main{
 .burger-item > p,.weekly-item > p,.pizza-item > p,.sandwiches-item > p,.desserts-item > p{
     color: grey;
     font-size: 0.6rem;
-    max-width: 250px;
+    max-width: 280px;
 }
 .s-header,.d-header{
     width: 80%;
