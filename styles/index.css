@@ -387,7 +387,7 @@ main{
     color: white;
     padding: 20px;
 }
-.burgers > h3,.weekly-specials > h3,.pizza > h3,.sides > h3,.sandwiches > h3{
+.burgers > h3,.weekly-specials > h3,.pizza > h3,.sides > h3,.sandwiches > h3,.desserts > h3{
     font-size: 3.3rem;
     margin: 0 0 0.3em 0;
     text-align: center;
@@ -397,7 +397,7 @@ main{
     justify-content: space-between;
 }
 .burger-option > h4,.weekly-option > h4, .pizza-option > h4,.sides-option > h4
-,.sandwiches-option > h4 
+,.sandwiches-option > h4 ,.desserts-option > h4
 {
     margin:  0 0 0.2em 0;
     font-size: 2rem;
@@ -430,18 +430,17 @@ main{
 .desserts-option > h4,p{
     margin: 0;
 }
-.sandwiches{
+.sandwiches,.desserts{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(3,1fr);
 }
-.s-header{
+
+.s-header,.d-header{
     grid-area: 1/1/1/3;
     justify-self: center;
 }
-.desserts{
-    display: flex;
-}
+
 .right-column{
     grid-area: 2/4/3/5;
     padding: 20px;
