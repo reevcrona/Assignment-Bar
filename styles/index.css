@@ -196,7 +196,6 @@ main{
     font-size: 4.5rem;
     margin: 0;
     color: white;
-    align-self: start;
     letter-spacing: 1px;
     font-weight: 900;
     margin-bottom: 5px;
@@ -206,10 +205,9 @@ main{
     color: white;
     line-height: 1.6;
     letter-spacing: 0.5px;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: normal;
     margin: 10px 0;
-    max-width: 660px;
 }
 .event-card-container{
     width: 100%;
@@ -364,7 +362,6 @@ main{
     display: flex;
     justify-content: center;
     align-items:center;
-    flex-direction: column;
     background-color: white;
 }
 .menu-main-container{
@@ -372,11 +369,19 @@ main{
     max-width: 1100px;
     height: 100%;
     max-height: 700px;
+    display: flex;
+    overflow: hidden;
+}
+.menu-grid-container{
+    min-width: 100%;
+    max-width: 1100px;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows:auto 1fr;
     background-color: #001F3F;
-    border: 10px solid black;
+    
+    transition: transform 0.8s ease-in-out;
 }
 
 .left-column{
@@ -387,6 +392,7 @@ main{
     min-width: 350px;
     padding: 20px;
     grid-area: 1/1/-1/2;
+    
 }
 .middle-column{
     color: white;
