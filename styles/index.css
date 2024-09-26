@@ -364,14 +364,16 @@ main{
     display: flex;
     justify-content: center;
     align-items:center;
+    flex-direction: column;
+    background-color: #511ab7;
 }
 .menu-main-container{
    width: 100%;
-   max-width: 1200px;
+   max-width: 1400px;
    display: grid;
-  grid-template-columns: repeat(4,1fr);
-  grid-template-rows:auto 1fr;
-   background-color: darkblue;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows:auto 1fr;
+   background-color: black;
 }
 
 .left-column{
@@ -420,9 +422,13 @@ main{
 .header-text > h2{
     margin: 0;
     color: white;
+    text-align: center;
 }
 .middle-column{
     grid-area: 2/2/3/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .sandwiches-option > h4,p{
     margin: 0;
@@ -434,6 +440,7 @@ main{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(3,1fr);
+    gap: 25px;
 }
 
 .s-header,.d-header{
@@ -442,12 +449,38 @@ main{
 }
 
 .right-column{
-    grid-area: 2/4/3/5;
+    grid-area: 2/4/3/-1;
     padding: 20px;
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
+}
+.sandwiches-option,.desserts-option{
+    display: flex;
+    justify-content: space-between;
+}
+.burger-header{
+    position: relative;
+    z-index: 1;
+}
+.burger-header::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background-color: #511ab7;
+    z-index: -1;
+    clip-path: polygon( 0 0,100% 0,100% 25%,90% 50%,100% 75%,100% 100%,0 100%);
+    border: 2px solid black;
+}
+.burger-item > p,.weekly-item > p,.pizza-item > p,.sandwiches-item > p,.desserts-item > p{
+    color: grey;
+    font-size: 0.8rem;
+    max-width: 300px;
 }
 
 /*Menu*/
