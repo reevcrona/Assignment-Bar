@@ -496,7 +496,7 @@ main{
 .s-header,.d-header{
     width: 80%;
 }
-.menu-button-food{
+.menu-button-food,.cocktail-menu-button{
     background-color: transparent;
     color: white;
     border:2px solid white;
@@ -507,14 +507,14 @@ main{
     font-size: 1.3rem;
     position: relative;
 }
-.menu-button-food:hover{
+.menu-button-food:hover,.cocktail-menu-button:hover{
     cursor: pointer;
 }
 .right-arrow{
     color: white;
 }
 
-.menu-button-food::before{
+.menu-button-food::before,.cocktail-menu-button::before{
     transition: 0.4s all ease-in-out;
     position: absolute;
     content: "";
@@ -529,7 +529,7 @@ main{
     
 }
 
-.menu-button-food:hover::before{
+.menu-button-food:hover::before,.cocktail-menu-button:hover::before{
     transition: 0.4s all ease-out;
     width: 100%;
     z-index: -1;
