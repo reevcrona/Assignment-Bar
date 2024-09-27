@@ -496,6 +496,44 @@ main{
 .s-header,.d-header{
     width: 80%;
 }
+.menu-button-food{
+    background-color: transparent;
+    color: white;
+    border:2px solid white;
+    grid-area: 1/5/1/-1;
+    width: 100%;
+    margin-top: 15px;
+    max-width: 180px;
+    font-size: 1.3rem;
+    position: relative;
+}
+.menu-button-food:hover{
+    cursor: pointer;
+}
+.right-arrow{
+    color: white;
+}
+
+.menu-button-food::before{
+    transition: 0.4s all ease-in-out;
+    position: absolute;
+    content: "";
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    width: 0;
+    background-color: #511ab7;
+    z-index: -1;
+    border-radius: 8px;
+    
+}
+
+.menu-button-food:hover::before{
+    transition: 0.4s all ease-out;
+    width: 100%;
+    z-index: -1;
+}
 /*Menu*/
 
 
