@@ -379,8 +379,13 @@ main{
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows:auto 1fr;
-    background-color: #001F3F;
     transition: transform 0.8s ease-in-out;
+}
+.grid-one{
+    background-color: #001F3F;
+}
+.grid-two{
+    background: linear-gradient(135deg, #511ab7, #7a3cd6, #a75cf1);
 }
 .left-column{
     display: flex;
@@ -404,6 +409,15 @@ main{
     position: relative;
     z-index: 1;
 }
+.drink-header{
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    margin: 0 0 0.3em 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
 .menu-header::before{
     content: "";
     position: absolute;
@@ -417,19 +431,22 @@ main{
     clip-path: polygon( 0 0,100% 0,100% 25%,90% 50%,100% 75%,100% 100%,0 100%);
     border: 2px solid black;
 }
-.menu-option{
+.menu-option,.drink-option{
     display: flex;
     justify-content: space-between;
 }
-.menu-option > h4{
+.menu-option > h4,.drink-option > h4{
     margin:  0 0 0.2em 0;
     font-size: 1.7rem;
 }
-.menu-info{
+.menu-info,.drink-info{
     color: grey;
     font-size: 0.6rem;
     max-width: 280px;
     margin: 0 0 0.5em 0;
+}
+.drink-info{
+    color: white;
 }
 .sandwiches > h3,.desserts > h3{
     font-size: 2.4rem;
@@ -465,6 +482,9 @@ main{
     margin: 0;
 }
 .sandwich-option > h4,p{
+    margin: 0;
+}
+.wine-option > h4,p{
     margin: 0;
 }
 .s-header,.d-header{
