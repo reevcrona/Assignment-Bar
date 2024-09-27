@@ -221,7 +221,6 @@ main{
     flex-wrap: wrap;
     font-family: "Lato",sans-serif;
     color: white;
-    overflow: hidden; 
     gap: 15px;
    
     
@@ -787,7 +786,7 @@ main{
 /*Food*/
    /*Events*/
    .events-section{
-    height: 100vh;
+    height: 150vh;
     
 }
 
@@ -802,8 +801,48 @@ main{
     flex-direction: column;
 }
 
+.event-card-container{
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    max-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: "Lato",sans-serif;
+    color: white;
+    gap: 15px;
+   
+    
+}
+.sunset,.jazz,.food,.violet{
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 280px;
+    position: relative;
+    overflow: hidden;
+   
+   
+}
+
 /*Events*/
 
+/*Menu*/
+.menu-section{
+    height: 150vh;
+}
+/*Menu*/
+.openHours-section{
+    height: 150vh;
+}
+
+.openHours-container,.questions-container{
+    max-width: 550px;
+    height: 100%;
+    max-height: 500px;
+}
 }
 
 
