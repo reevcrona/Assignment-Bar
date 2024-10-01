@@ -8,7 +8,7 @@ body{
 }
 
 header{
-    background-image: url(/images/Hero-image.jpeg);
+    background-image: url(../images/Hero-image.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -245,7 +245,7 @@ main{
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url(/images/SunsetSocial.jpeg);
+    background-image: url(../images/SunsetSocial.jpeg);
     transition: all 0.2s ease-in;
 }
 .jazz::before{
@@ -256,7 +256,7 @@ main{
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url(/images/jazz.jpeg);
+    background-image: url(../images/jazz.jpeg);
     transition: all 0.2s ease-in;
 }
 .food::before{
@@ -267,7 +267,7 @@ main{
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url(/images/vecteezy_group-of-friends-eating-pizza-in-cafe-close-up-view_32208517.jpg);
+    background-image: url(../images/vecteezy_group-of-friends-eating-pizza-in-cafe-close-up-view_32208517.jpg);
     transition: all 0.2s ease-in;
 }
 .violet::before{
@@ -278,7 +278,7 @@ main{
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url(/images/vecteezy_vibrant-purple-balloons-floating-against-a-soft-lavender_50125052.jpeg);
+    background-image: url(../images/vecteezy_vibrant-purple-balloons-floating-against-a-soft-lavender_50125052.jpeg);
     transition: all 0.2s ease-in;
 }
 .violet:hover::before,.food:hover::before,.jazz:hover::before,.sunset:hover::before{
