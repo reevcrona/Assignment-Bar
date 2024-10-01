@@ -5,6 +5,7 @@ body{
     min-height: 100vh;
     height: auto;
     font-family: "Lato",sans-serif;
+    background: linear-gradient(135deg, #511ab7, #7a3cd6, #a75cf1);
 }
 
 header{
