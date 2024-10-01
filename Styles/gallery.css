@@ -1,0 +1,120 @@
+body{
+    background-image: url(../images/BarBackgroundLeft.jpeg), url(../images/BarBackgroundRight.jpeg);
+    background-position: left top, right top;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed;
+}
+
+.main-container{
+    margin: auto;
+    background: linear-gradient(135deg, #511ab7, #7a3cd6, #a75cf1);
+    background-attachment: fixed;
+    padding-bottom: 20px;
+    max-width: 1400px;
+    width: 100%;
+    height: 100%;
+}
+
+.main-header{
+    background-color: aquamarine;
+    text-align: center;
+}
+.gall-img{
+    border: #a75cf1;
+    border-style: solid;  
+    transition-duration: 3s;  
+}
+    
+.gall-img:hover{
+    position: relative;
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+.watermark{    
+
+  position: absolute; /* Sit on top of the page content */
+  opacity: 0; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  background: url(../images/pearl-svgrepo-com.svg);
+  z-index: 0; /* Specify a stack order in case you're using a different order for other elements */
+  transition: all 0.7s;
+  background-size:cover;
+}
+    
+.watermark:hover{
+    opacity: 0.2;
+}
+
+.gallery-container{
+    padding: 2vh;
+}
+
+.grid-container{
+    position: relative;
+    background: linear-gradient(180deg, #511ab7, #e06907, #511ab7);
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 2vh;
+    display: grid;
+    gap: 2vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.grid-object{
+
+    position: relative;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one{
+    grid-area: 1 / 1 / 3 / 3;
+    background-color: #053225;
+}
+
+.two{
+    grid-area: 1 / 3 / 3 / 4;
+    background-color: #743E4A;
+}
+
+.three{
+    grid-area: 1 / 4 / 2 / 5;
+    background-color: #E34A6F;
+}
+
+.four{
+    grid-area: 2 / 4 / 3 / 5;
+    background-color: #E86483;
+}
+
+.five{
+    grid-area: 3 / 1 / 5 / 2;
+    background-color: #ED7E96;
+}
+
+.six{
+    grid-area: 3 / 2 / 4 / 3;
+    background-color: #F7B2BD;
+}
+
+.seven{
+    grid-area: 3 / 3 / 5 / 5;
+    background-color: #D5AAAB;
+}
+
+.eight{
+    grid-area: 4 / 2 / 5 / 3;
+    background-color: #B2A198;
+}
+
+.pic {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
