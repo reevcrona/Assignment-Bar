@@ -15,10 +15,6 @@ body{
     height: 100%;
 }
 
-.main-header{
-    background-color: aquamarine;
-    text-align: center;
-}
 .gall-img{
     border: #a75cf1;
     border-style: solid;  
@@ -32,23 +28,18 @@ body{
 }
 
 .watermark{    
-
-  position: absolute; /* Sit on top of the page content */
-  opacity: 0; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
-  background: url(../images/pearl-svgrepo-com.svg);
-  z-index: 0; /* Specify a stack order in case you're using a different order for other elements */
-  transition: all 0.7s;
-  background-size:cover;
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/pearl-svgrepo-com.svg);
+    z-index: 0;
+    transition: all 0.7s;
+    background-size:cover;
 }
     
 .watermark:hover{
     opacity: 0.2;
-}
-
-.gallery-container{
-    padding: 2vh;
 }
 
 .grid-container{
@@ -65,7 +56,6 @@ body{
 }
 
 .grid-object{
-
     position: relative;
     background-color: blueviolet;
     display: flex;
