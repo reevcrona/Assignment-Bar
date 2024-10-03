@@ -34,12 +34,15 @@ body{
     -webkit-text-stroke: 3px white;
     margin: 0;
     align-self: center;
+   margin: 50px 0 0 50px;
 }
 
 .happy{
     font-size: 12.5rem;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.8),
+        4px 4px 6px rgba(0, 0, 0, 0.6)
 }
 .add-white{
     color: white;
