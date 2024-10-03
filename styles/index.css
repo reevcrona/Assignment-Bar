@@ -877,11 +877,11 @@ main{
 
 /*Menu*/
 .menu-section{
-    height: 150vh;
+    min-height: 150vh;
 }
 /*Menu*/
 .openHours-section{
-    height: 150vh;
+    min-height: 150vh;
 }
 
 .openHours-container,.questions-container{
