@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Helvetica Neue', sans-serif;
 }
+
 .lato-thin {
     font-family: "Lato", sans-serif;
     font-weight: 100;
@@ -67,13 +68,15 @@
 
 body {
     background-color: #af78b3;
+    min-height: 100vh;
+    animation: fadeIn 1.5s ease-in; /* Body animation */
+}
+.contact-section{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    animation: fadeIn 1.5s ease-in; /* Body animation */
+    margin: 70px 0;
 }
-
 .contact-container {
     background-color: #6a0dad; /* Purple background */
     padding: 40px;

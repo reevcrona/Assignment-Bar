@@ -8,13 +8,14 @@ body{
     background: linear-gradient(135deg, #511ab7, #7a3cd6, #a75cf1);
 }
 
-header{
+
+.hero-section{
     background-image: url(../images/Hero-image.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100vh;
+    height: 90vh;
 }
 
 /*Hero*/
@@ -26,8 +27,8 @@ header{
 }
 .outline-text{
     font-family: "Lato", serif;
-    font-size: 11rem;
-    max-width: 1400px;
+    font-size: 12rem;
+    max-width: 1500px;
     font-weight: bold;
     color: transparent;
     -webkit-text-stroke: 3px white;
@@ -36,7 +37,7 @@ header{
 }
 
 .happy{
-    font-size: 11.5rem;
+    font-size: 12.5rem;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
