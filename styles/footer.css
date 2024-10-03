@@ -18,15 +18,21 @@ footer{
 }
 .footer-socials{
     display: flex;
+    justify-content: space-between;
     padding: 0;
     margin: 0;
+    width: 100%;
+    max-width: 150px;
 }
 .footer-socials > li{
     list-style: none;
 }
+.footer-socials > li:hover{
+    transform: scale(1.2);
+}
 .copyright{
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: white;
 }
 .footer-logo{
