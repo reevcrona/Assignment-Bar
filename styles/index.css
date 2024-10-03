@@ -223,7 +223,7 @@ main{
     flex-wrap: wrap;
     font-family: "Lato",sans-serif;
     color: white;
-    gap: 15px;
+    gap: 30px;
    
     
 }
@@ -360,8 +360,9 @@ main{
 
 /*Menu*/
 .menu-section{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items:center;
     background-color: #511ab7;
@@ -373,6 +374,34 @@ main{
     max-height: 700px;
     display: flex;
     overflow: hidden;
+}
+.menu-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 100px 0;
+}
+.menu-text{
+    color: white;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    font-weight: normal;
+    margin: 0;
+    width: 100%;
+    max-width: 730px;
+}
+.menu-text-header{
+    color: white;
+    font-size: 6rem;
+    margin: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 730px;
+   
 }
 .menu-grid-container{
     min-width: 100%;
@@ -519,7 +548,7 @@ main{
 .menu-button-food:hover,.cocktail-menu-button:hover{
     cursor: pointer;
 }
-.menu-button-food::before,.cocktail-menu-button::before{
+.menu-button-food::before{
     transition: 0.4s all ease-in-out;
     position: absolute;
     content: "";
@@ -532,6 +561,18 @@ main{
     z-index: -1;
     border-radius: 8px;
     
+}
+.cocktail-menu-button::before{
+    transition: 0.4s all ease-in-out;
+    position: absolute;
+    content: "";
+    top:0;
+    right:0;
+    bottom: 0;
+    width: 0;
+    background-color: #511ab7;
+    z-index: -1;
+    border-radius: 8px;
 }
 .menu-button-food:hover::before,.cocktail-menu-button:hover::before{
     transition: 0.4s all ease-out;

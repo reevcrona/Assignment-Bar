@@ -75,7 +75,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 70px 0;
+    margin: 70px 0 100px 0;
 }
 .contact-container {
     background-color: #6a0dad; /* Purple background */
